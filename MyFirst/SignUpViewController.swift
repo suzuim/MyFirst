@@ -23,10 +23,16 @@ class SignUpViewController: UIViewController {
         
         profileImageButton.layer.cornerRadius = 85
         profileImageButton.layer.borderWidth = 1
-        profileImageButton.layer.borderColor = UIColor.
+         profileImageButton.layer.borderColor = CGColor(red: 245/255.0, green: 84/255.0, blue: 45/255.0, alpha: 1.0)
         
+        registerButton.layer.cornerRadius = 12
         
+        profileImageButton.addTarget(self, action: #selector(tappedProfileImageButton), for: .touchUpInside)
         
+    }
+    
+    @objc private func tappedProfileImageButton() {
+        print("tappedProfileImageButton")
         
     }
     
