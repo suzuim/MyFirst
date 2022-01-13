@@ -33,7 +33,20 @@ class SignUpViewController: UIViewController {
     
     @objc private func tappedProfileImageButton() {
         print("tappedProfileImageButton")
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
         
+        self.present(imagePickerController, animated: true, completion: nil)
     }
     
+}
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @UIApplicationMain
+    class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    }
+
 }
