@@ -37,6 +37,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+ChatListViewController.swift > ChatListViewController
 import UIKit
 
 class ChatListViewController: UIViewController {
@@ -50,7 +51,7 @@ class ChatListViewController: UIViewController {
 }
 
 
-②SceneDelegate.swift > scene(_:willConnectTo:options:)
+SceneDelegate.swift > scene(_:willConnectTo:options:)
 
 import UIKit
 
